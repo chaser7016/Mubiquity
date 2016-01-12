@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Javascripting: A Music App</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
+</head>
+<body>
+<header>
+	  <div class="wrapper">
+			<h1>Mubiquity</h1>
+				<form onsubmit="audioResults(); return false;"><input id="search" placeholder="artist, song or genre" /><button type="submit">Search</button></form>
+	 
+	   <div id="playList"></div>
+	  </div>
+</header>
+
+<section>
+		<div class="wrapper">
+			<ul id="results">
+				<li class="template default">
+					<img class="track-artwork" alt="album artwork" >
+					<div>
+						<span class="track-title"></span>
+						<span class="track-artist"></span>
+					</div>
+				</li>
+			</ul>	
+		</div>
+</section>
+	
+<footer>
+	  <div class="pollSlider">
+	  <div class="pollSlider-button"><img src="img/share-icon.png" alt="share icon"></div>
+			<h6>SHARE NOW PLAYING:</h6>
+			<span id="shareLink"></span>
+	  </div>
+	  <div class="wrapper">
+		<audio id="player"></audio>
+			<div class="btn">
+				<button id="play"></button>
+			</div>
+			<div class="btn">
+				<button id="pause"></button>
+			</div>
+			<div class="btn text">
+				<span id="nowPlaying"></span>
+				<span id="PlaylistAdd"></span>
+			</div>
+	  </div>
+</footer>
+ 
+<script src="js/search.js"></script>
+
+</body>
+</html>
