@@ -1,2 +1,0 @@
-# Mubiquity
-Web Music App
